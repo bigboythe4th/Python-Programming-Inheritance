@@ -105,9 +105,16 @@ class coupe(Car):
     def __init__(self):
         Car.__init__(self) 
         self.price = 24000
+        
 
 class van(Car):
     
     def __init__(self):
         Car.__init__(self) 
         self.price = 32000
+
+class Luxury_Car(Car):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 60000
