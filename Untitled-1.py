@@ -11,97 +11,103 @@ class Vehicle:
 class Car(Vehicle):
     
     def __init__(self):
-        super().__init__()
+        Vehicle.__init__(self)
         self.category = 'car'
 
 class boat(Vehicle):
     
     def __init__(self):
-        super().__init__()
+        Vehicle.__init__(self)
         self.category = 'boat'
         
         
 class Truck(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 40000
         
-class pickup_truck(Truck):
+class Pickup_Truck(Truck):
     
     def __init__(self):
-        super().__init__() 
+        Truck.__init__(self) 
         self.price = 35000
 
 
-class Nissan_Frontier(pickup_truck):
+class Nissan_Frontier(Pickup_Truck):
     
     def __init__(self):
-        super().__init__() 
+        Pickup_Truck.__init__(self) 
         self.price = 28000
 
 
-class semi_truck(Truck):
+class Semi_Truck(Truck):
     
     def __init__(self):
-        super().__init__() 
+        Truck.__init__(self) 
         self.price = 150000
 
-class kenworth_t880(semi_truck):
+class Kenworth_t880(Semi_Truck):
     
     def __init__(self):
-        super().__init__() 
+        Semi_Truck.__init__(self) 
         self.price = 180000
 
 
 
 
-class sports_car(Car):
+class Sports_car(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 70000
 
-class exotic_car(sports_car):
+class Exotic_Car(Sports_car):
     
     def __init__(self):
-        super().__init__() 
+        Sports_car.__init__(self) 
         self.price = 500000
 
-class mclaren_p1 (exotic_car):
+class mclaren_p1(Exotic_Car):
     
     def __init__(self):
-        super().__init__() 
+        Exotic_Car.__init__(self) 
         self.price = 1500000
+
+class  Ferrari_F8(Exotic_Car):
+    
+    def __init__(self):
+        Exotic_Car.__init__(self) 
+        self.price = 300000
 
 class suv(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 32000
         
 
-class sedan(Car):
+class Hatchback(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 23000
 
 
 class sedan(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 23000
 
 class coupe(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 24000
 
 class van(Car):
     
     def __init__(self):
-        super().__init__() 
+        Car.__init__(self) 
         self.price = 32000
