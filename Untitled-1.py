@@ -12,15 +12,56 @@ class Car(Vehicle):
     
     def __init__(self):
         Vehicle.__init__(self)
-        self.category = 'car'
+        self.category = 'Car'
 
-class boat(Vehicle):
+class Boat(Vehicle):
     
     def __init__(self):
         Vehicle.__init__(self)
-        self.category = 'boat'
+        self.category = 'Boat'
         
-        
+class Fishing_Vessel(Boat):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 200000
+
+class Motor_Yacht(Boat):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 10000000
+
+class Sailboat(Boat):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 700000
+
+class Barge(Boat):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 50000
+
+class m3_Self_Propelled_Split_Hopper_Barge(Barge):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 3200000
+
+class Cargo_Ship(Boat):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 1200000
+
+class MSC_Irina(Cargo_Ship):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 15000000
+
 class Truck(Car):
     
     def __init__(self):
@@ -52,9 +93,6 @@ class Kenworth_t880(Semi_Truck):
     def __init__(self):
         Semi_Truck.__init__(self) 
         self.price = 180000
-
-
-
 
 class Sports_car(Car):
     
