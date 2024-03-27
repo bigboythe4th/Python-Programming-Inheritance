@@ -67,6 +67,18 @@ class Truck(Car):
     def __init__(self):
         Car.__init__(self) 
         self.price = 40000
+
+class Truck_SUV(Truck):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 80000
+
+class Ford_Bronco_Raptor(Truck_SUV):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 80000
         
 class Pickup_Truck(Truck):
     
@@ -118,12 +130,23 @@ class  Ferrari_F8(Exotic_Car):
         Exotic_Car.__init__(self) 
         self.price = 300000
 
-class suv(Car):
+class  Mclaren_f1(Exotic_Car):
+    
+    def __init__(self):
+        Exotic_Car.__init__(self) 
+        self.price = 20000000
+
+class SUV(Car):
     
     def __init__(self):
         Car.__init__(self) 
         self.price = 32000
         
+class Hyundai_Kona(SUV):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 25625
 
 class Hatchback(Car):
     
@@ -131,19 +154,41 @@ class Hatchback(Car):
         Car.__init__(self) 
         self.price = 23000
 
+class Mazda_3(Hatchback):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 25335
 
-class sedan(Car):
+class Sedan(Car):
     
     def __init__(self):
         Car.__init__(self) 
         self.price = 23000
 
-class coupe(Car):
+class Honda_Civic(Sedan):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 23000
+
+class Honda_Civic_2024(Honda_Civic):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 25000
+
+class Coupe(Car):
     
     def __init__(self):
         Car.__init__(self) 
         self.price = 24000
         
+class Audi_A5(Coupe):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 40000
 
 class van(Car):
     
@@ -156,3 +201,15 @@ class Luxury_Car(Car):
     def __init__(self):
         Car.__init__(self) 
         self.price = 60000
+
+class Rolls_Royce_Phantom_2024(Luxury_Car):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 505750
+
+class Bentley_Flying_Spur(Luxury_Car):
+    
+    def __init__(self):
+        Car.__init__(self) 
+        self.price = 217625
